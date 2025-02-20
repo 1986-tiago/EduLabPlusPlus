@@ -1,0 +1,95 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    background: #0d1b2a;
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    margin: 0 10px;
+}
+
+.navbar-nav .btn-contact {
+    background: #f4a261;
+    color: #0d1b2a !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.navbar-nav .btn-contact:hover {
+    background: #e76f51;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #0d1b2a, #1b263b);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-section .btn {
+    background: #f4a261;
+    color: #0d1b2a;
+    font-weight: bold;
+    border: none;
+}
+
+.hero-section .btn:hover {
+    background: #e76f51;
+}
+
+/* Categorias */
+.categories {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.category {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.category:hover {
+    transform: translateY(-10px);
+}
+
+/* Contato */
+.contact {
+    background: #1b263b;
+    color: white;
+    padding: 50px 20px;
+}
+
+.contact .btn {
+    background: #f4a261;
+    font-weight: bold;
+}
+
+.contact .btn:hover {
+    background: #e76f51;
+}
+
+/* Animação Hero */
+.animated-text {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
