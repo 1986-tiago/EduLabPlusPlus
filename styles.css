@@ -1,7 +1,9 @@
-/* Estilos Gerais */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar */
@@ -10,32 +12,21 @@ body {
     padding: 15px;
 }
 
-.navbar-brand {
-    font-weight: bold;
-    font-size: 24px;
+.navbar .navbar-nav .nav-item {
+    margin: 0 15px;
 }
 
-.navbar-nav .nav-link {
-    color: white !important;
-    margin: 0 10px;
-}
-
-.navbar-nav .btn-contact {
-    background: #f4a261;
-    color: #0d1b2a !important;
-    padding: 8px 15px;
-    border-radius: 5px;
-}
-
-.navbar-nav .btn-contact:hover {
-    background: #e76f51;
+/* Espaçamento adequado abaixo da navbar nos HTMLs secundários */
+.page-content {
+    margin-top: 100px;
+    padding: 20px;
 }
 
 /* Hero Section */
 .hero-section {
     background: linear-gradient(to right, #0d1b2a, #1b263b);
     color: white;
-    padding: 80px 20px;
+    padding: 100px 20px;
     text-align: center;
 }
 
@@ -44,16 +35,21 @@ body {
     color: #0d1b2a;
     font-weight: bold;
     border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
 }
 
 .hero-section .btn:hover {
     background: #e76f51;
 }
 
-/* Categorias */
+/* Botões Ensino Fundamental, Médio e Graduação */
 .categories {
-    margin: 50px auto;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    gap: 30px;
+    margin: 60px 0;
 }
 
 .category {
@@ -62,34 +58,68 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    width: 280px;
+}
+
+.category a {
+    text-decoration: none;
+    color: #0d1b2a;
+    font-weight: bold;
 }
 
 .category:hover {
     transform: translateY(-10px);
 }
 
-/* Contato */
-.contact {
+/* Alternância de fundo nas seções */
+.services {
     background: #1b263b;
     color: white;
-    padding: 50px 20px;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.contact .btn {
+.how-it-works {
+    background: white;
+    color: #0d1b2a;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Seção "Entre em contato" */
+.contact-cta {
+    background: #1b263b;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-cta .btn {
     background: #f4a261;
     font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-.contact .btn:hover {
+.contact-cta .btn:hover {
     background: #e76f51;
 }
 
-/* Animação Hero */
-.animated-text {
-    animation: fadeIn 2s ease-in-out;
+/* Frases aleatórias */
+.quote-section {
+    background: white;
+    color: #0d1b2a;
+    padding: 50px;
+    text-align: center;
+    font-style: italic;
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-20px); }
-    100% { opacity: 1; transform: translateY(0); }
+/* Footer */
+.footer {
+    background: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
